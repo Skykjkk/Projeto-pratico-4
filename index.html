@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Alunos e Notas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cartao-principal">
+    <h1>🎀 Cadastrando Alunos 🎀</h1>
+    
+    <div class="container-formulario">
+      <input type="text" id="campoNome" placeholder="Nome do Aluno">
+      <div class="linha-entradas">
+        <input type="number" id="campoNota1" placeholder="Nota 1">
+        <input type="number" id="campoNota2" placeholder="Nota 2">
+      </div>
+      <button id="botaoGerar">Gerar Resultado</button>
+    </div>
+
+    <canvas id="grafico" width="500" height="300"></canvas>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Aluno</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Média</th>
+        </tr>
+      </thead>
+      <tbody id="corpoDaTabela">
+        </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
